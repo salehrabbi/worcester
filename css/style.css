@@ -1,0 +1,335 @@
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.space {
+  padding: 65px 0;
+}
+
+p {
+  margin: 0;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    width: 1294px;
+  }
+}
+.section-head {
+  padding-bottom: 43px;
+}
+.section-head h2 {
+  margin: 0;
+  font-size: 62px;
+  font-family: "Bitter", serif;
+  color: #722672;
+  text-decoration: underline;
+}
+
+.main-header {
+  padding-top: 8px;
+  padding-bottom: 13px;
+}
+.main-header .top-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3px;
+  position: relative;
+  top: 11px;
+}
+.main-header .top-menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.main-header .top-menu li:last-child {
+  margin-right: 0;
+}
+.main-header .top-menu li a {
+  font-size: 10px;
+  color: #757575;
+  text-transform: uppercase;
+}
+.main-header .navbar-brand {
+  height: auto;
+  padding: 0 15px;
+}
+.main-header .navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  margin: 0;
+}
+.main-header .navbar-nav {
+  margin-top: 15px;
+}
+.main-header .search {
+  position: absolute;
+  top: 150%;
+  opacity: 0;
+  right: 0;
+  z-index: 3;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.main-header .search input {
+  background: none;
+  background: #fff;
+  border: none;
+  height: 50px;
+  border: 1px solid #007DA2;
+  float: left;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+  width: calc(100% - 50px);
+}
+.main-header .search button {
+  height: 50px;
+  border: none;
+  background: #007DA2;
+  color: #fff;
+  width: 50px;
+  float: left;
+}
+.main-header .search.active {
+  opacity: 1;
+  top: 125%;
+}
+.main-header .navbar-nav > li > a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #007DA2;
+  padding: 10px;
+}
+
+.slider {
+  background: url(../images/slider.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom: 8px solid #EE7023;
+  overflow: hidden;
+  padding-bottom: 72px;
+}
+.slider .translation {
+  position: absolute;
+  right: 0;
+  top: 98px;
+  display: inline-block;
+  z-index: 3;
+}
+.slider svg {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.slider .container {
+  min-height: 567px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  z-index: 2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slider .container h1 {
+  font-size: 62px;
+  font-family: "Bitter", serif;
+  color: #fff;
+  text-align: center;
+}
+.slider .arrow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 92px;
+  height: 92px;
+  background: #EE7023;
+  border-radius: 50%;
+  z-index: 3;
+  text-align: center;
+  padding-top: 13px;
+  margin-bottom: -46px;
+}
+.slider .arrow svg {
+  width: 25px;
+  height: 14px;
+  position: static;
+}
+
+.service .col-md-2 {
+  border-right: 1px solid #D1D3D4;
+}
+.service .col-md-2:last-child {
+  border-color: transparent;
+}
+.service .item {
+  text-align: center;
+}
+.service .item .img {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5px;
+}
+.service .item .number {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Bitter", serif;
+  color: #007DA2;
+}
+.service .item p {
+  color: #007DA2;
+  font-size: 18px;
+}
+
+.home-blog .item .img {
+  position: relative;
+}
+.home-blog .item .img img {
+  width: 100%;
+}
+.home-blog .item .img h2 {
+  margin: 0;
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  bottom: -25px;
+  left: 25px;
+}
+.home-blog .item .img h2 span {
+  display: inline-block;
+  background: #007DA2;
+  margin-bottom: 6px;
+  padding: 5px 10px;
+}
+.home-blog .item .text {
+  padding: 57px 25px 0 25px;
+}
+.home-blog .item .text p {
+  font-size: 20px;
+  color: #414042;
+  line-height: 1.5;
+}
+.home-blog .item .text a.read {
+  color: #007DA2;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.news .item {
+  border-bottom: 4px solid #84BE41;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+.news .item .img img {
+  width: 100%;
+}
+.news .item .text {
+  padding: 20px;
+}
+.news .item .text .title {
+  color: #00A39F;
+  font-weight: 700;
+  font-size: 20px;
+}
+.news .item .text p {
+  font-size: 18px;
+  color: #414042;
+  margin-top: 10px;
+  line-height: 1.3333333333;
+}
+
+.twitter-feed .item {
+  margin-bottom: 25px;
+}
+.twitter-feed .item img {
+  width: 100%;
+}
+
+.main-footer {
+  background: #0B4B7F;
+  color: #fff;
+}
+.main-footer .widget h3 {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Bitter", serif;
+  margin-bottom: 23px;
+}
+.main-footer .widget .list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.main-footer .widget .list li a {
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.8333333333;
+}
+.main-footer .footer-social {
+  text-align: center;
+}
+.main-footer .footer-social a {
+  display: inline-block;
+  height: 52px;
+  width: 52px;
+  background: #007DA2;
+  text-align: center;
+  line-height: 52px;
+  color: #fff;
+  margin: 0 2px;
+  font-size: 30px;
+}
+.main-footer .footer-bottom {
+  margin-top: 73px;
+}
+.main-footer .footer-menu {
+  font-size: 12px;
+}
+.main-footer .footer-menu a {
+  color: #fff;
+  display: inline-block;
+  margin: 0 10px;
+}
+.main-footer .footer-menu span {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+@media (min-width: 992px) {
+  .main-footer .widgets [class*='col-'] {
+    width: 20%;
+  }
+}
